@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="dark-hive">
+            <h:outputText value="#{myBundle.AppName}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <p:panel header="#{myBundle.Welcome}">
+                <p><h:outputText value="#{myBundle.WelcomeMessage}"></h:outputText></p>
+                <p:accordionPanel multiple="true">
+                <p:tab title="Premier League">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <p:graphicImage value="img/premier.png" />
+                        <h2> La Premier League (oficialmente Barclays Premier League por motivos de patrocinio), también conocida en el Reino Unido como The Premiership, es la máxima categoría de la liga de clubes de fútbol de Inglaterra y Gales. Fue fundada en 20 de febrero de 1992, siguiendo la decisión de los equipos de la Football League First Division (hasta entonces la máxima categoría de la liga conjunta de Inglaterra y Gales) de separarse de la Football League para tomar ventaja de un lucrativo contrato de derechos de televisión. El torneo es considerado por la Federación Internacional de Historia y Estadística de Fútbol de la FIFA como la liga más fuerte de la última década en Europa superando a la Primera División de España y la Serie A italiana que ocupan el segundo y tercer lugar respectivamente </h2>
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Bundesleague">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <p:graphicImage value="img/bundes.png" />
+                        <h2>La Fußball-Bundesliga (en español, Liga Federal de Fútbol) es la competición entre los equipos de fútbol de la máxima categoría de Alemania. Se comenzó a disputar en 1963, a partir de la unificación de los antiguos campeonatos zonales llamados Oberligas. Junto con la 2. Bundesliga y 3. Liga, forman las tres divisiones nacionales del fútbol alemán. Las temporadas se ejecutan a partir de agosto hasta mayo. La mayoría de los partidos se juegan los sábados y domingos, con unos pocos partidos jugados durante la semana. Todos los equipos de la Bundesliga clasifican para la DFB-Pokal. El ganador de la Bundesliga califica para la DFL-Supercup.</h2>
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Serie A">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <p:graphicImage value="img/seriea.png" />
+                        <h2>La Serie A [ˈseːrje a] (oficialmente Serie A TIM por motivos de patrocinio) es la máxima competición de la liga profesional de clubes de fútbol en Italia. La Serie A es la primera división del sistema de ligas del fútbol italiano y se disputá desde la temporada 1929-30. La competición había sido organizada por la Lega Calcio hasta 2010, pero desde la temporada 2010-11 se creó la Lega Nazionale Professionisti Serie A o, más sencillamente, Lega Serie A. Actualmente la Serie A ocupa el cuarto puesto entre las ligas europeas más potentes según el coeficiente UEFA, superada por La Liga española, la Premier League inglesa y la Bundesliga que se basa en los resultados de los clubes italianos en la Liga de Campeones y la Liga Europea.</h2>
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>               
+            
+            <p:media value="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/28168523&amp;auto_play=true&amp;hide_visual=false" width="200" height="20" player="quicktime">
+                <f:param name="autoPlay" value="false" />
+                
+            </p:media>           
+            
+            </p:panel>
+
+        </ui:define>
+
+    </ui:composition>
+
+</html>
